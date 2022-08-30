@@ -1,6 +1,7 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[]{graphicx}
+\usepackage[]{amsmath}
 \graphicspath{{figures/}}
 \title{Integer Programming}
 \author{Renda Nyamande}
@@ -14,5 +15,80 @@
         \textbf{We shall conquer at all costs!}
     \end{center}
 \end{abstract}
+\pagebreak
+
+\section*{What is it?}
+\paragraph*{Def}
+LP problems with at least one variable that has to be an integer.
+\subsection*{Types}
+\begin{itemize}
+    \item Pure - All decision vars have to be integers.
+        \begin{math}
+            X\in int
+        \end{math}
+    \item Mixed - Some ints and some not (Even int + binary).
+    \item Binary - Decision vars can only take on the values 0 or 1.\\
+        \begin{math}
+            X\in\{0;1\}
+        \end{math}
+\end{itemize}
+\subsection*{Characteristics}
+\begin{itemize}
+    \item The change from a normal LP to an integer one changes the problem drastically; Making it more complex (Might not even have a solution).
+\end{itemize}
+
+\subsection*{Example 1}
+\begin{figure}[ht]
+    \centering
+    \includegraphics*[width=0.75\textwidth]{example1}
+    \caption{Example 1}
+    \label{fig: Example 1}
+\end{figure}
+\pagebreak
+
+Max $
+    X_1 +3X_2\\
+    S.t:\\
+    2X_1+8X_2 \leq 9\\
+    4X_1+X_2 \leq 15.5\\
+    8X_1-4X_2 \geq -5\\
+    X_1, X_2 \geq 0
+$ and Integer\\
+\begin{itemize}
+    \item Point A would be the optimal solution point if this was a normal LP problem.
+    \item Trying to use the same point rounded up would result in one using a point that's actually not in the feasible region.
+    \item If you round down, the solution would be feasible but not optimal.
+    \item Adding an int constraint can only restrict the solution.
+    \item Therefore A is the best solution we could ever hope to achieve having restricted things.
+    \item So shifting the isocost line down from A (Restricting solution), the first int point it touches will be the optimal point.
+    \item Theres an algorithm we'll use to find these solutions.
+\end{itemize}
+\subsection*{Example 2}
+\begin{figure}[ht]
+    \centering
+    \includegraphics*[width=1\textwidth]{example2}
+    \caption{Example 2}
+    \label{fig: Example 2}
+\end{figure}
+
+\begin{equation}
+   Let X_j =
+  \begin{cases}
+    1 & \text{if project $j$ is selected; j = 1,2,3,4} \\
+    0 & \text{Otherwise}
+  \end{cases}
+\end{equation}
+Max $8000X_1+11000X_2+6000X_3+4000X4$
+St:
+$5000X_1+7000X_2+4000X_3+3000X_4 \leq 14000\\
+X_1, X_2, X_3, X_4 \in \{0,1\} 
+$
+\begin{itemize}
+    \item Using simplex, Z = R22000 ($X_1=X_2=1, X_3=0.5, X_4=0$)
+    \item This obviously doesn't satisfy the last constraint.
+    \item If you round down, Z = R19000
+    \item Better solution - $X_1=0, X_2=X_3=X_4=1$
+    \item This is found using the algorithm we'll learn later.
+\end{itemize}
 
 \end{document}
