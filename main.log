@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.8.30)  31 AUG 2022 07:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.8.30)  31 AUG 2022 08:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -207,19 +207,47 @@ File: figures//Relaxation_of_ILP.png Graphic file (type png)
 <use figures//Relaxation_of_ILP.png>
 Package pdftex.def Info: figures//Relaxation_of_ILP.png  used on input line 193.
 (pdftex.def)             Requested size: 253.49762pt x 239.79784pt.
- [7 <./figures//Relaxation_of_ILP.png>] [8] (main.aux) ) 
+ [7 <./figures//Relaxation_of_ILP.png>] [8]
+<figures//Branch_and_Bound_example1.png, id=58, 245.718pt x 208.98074pt>
+File: figures//Branch_and_Bound_example1.png Graphic file (type png)
+<use figures//Branch_and_Bound_example1.png>
+Package pdftex.def Info: figures//Branch_and_Bound_example1.png  used on input line 216.
+(pdftex.def)             Requested size: 269.10095pt x 228.89418pt.
+ [9 <./figures//Branch_and_Bound_example1.png>]
+<figures//Branch_and_Bound_workedexample_part1.png, id=65, 787.743pt x 463.7325pt>
+File: figures//Branch_and_Bound_workedexample_part1.png Graphic file (type png)
+<use figures//Branch_and_Bound_workedexample_part1.png>
+Package pdftex.def Info: figures//Branch_and_Bound_workedexample_part1.png  used on input line 224.
+(pdftex.def)             Requested size: 467.99881pt x 275.5103pt.
+
+Overfull \hbox (77.99881pt too wide) in paragraph at lines 224--225
+ [][] 
+ []
+
+[10 <./figures//Branch_and_Bound_workedexample_part1.png>]
+<figures//Branch_and_Bound_workedexample_part2.png, id=72, 732.336pt x 375.20175pt>
+File: figures//Branch_and_Bound_workedexample_part2.png Graphic file (type png)
+<use figures//Branch_and_Bound_workedexample_part2.png>
+Package pdftex.def Info: figures//Branch_and_Bound_workedexample_part2.png  used on input line 232.
+(pdftex.def)             Requested size: 467.99881pt x 239.77905pt.
+
+Overfull \hbox (77.99881pt too wide) in paragraph at lines 232--233
+ [][] 
+ []
+
+[11 <./figures//Branch_and_Bound_workedexample_part2.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 2730 strings out of 477843
- 46957 string characters out of 2823599
- 351245 words of memory out of 3000000
- 21633 multiletter control sequences out of 15000+600000
+ 2766 strings out of 477843
+ 48630 string characters out of 2823599
+ 351273 words of memory out of 3000000
+ 21669 multiletter control sequences out of 15000+600000
  476724 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,12n,67p,372b,351s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\renda\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (8 pages, 245115 bytes).
+Output written on main.pdf (11 pages, 519498 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
