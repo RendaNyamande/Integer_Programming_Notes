@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.8.30)  31 AUG 2022 00:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.8.30)  31 AUG 2022 02:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -189,19 +189,31 @@ File: figures//example2.png Graphic file (type png)
 <use figures//example2.png>
 Package pdftex.def Info: figures//example2.png  used on input line 69.
 (pdftex.def)             Requested size: 390.0pt x 136.65509pt.
-[3 <./figures//example2.png>] [4] (main.aux) ) 
+[3 <./figures//example2.png>]
+<figures//example3.png, id=30, 314.3745pt x 218.61674pt>
+File: figures//example3.png Graphic file (type png)
+<use figures//example3.png>
+Package pdftex.def Info: figures//example3.png  used on input line 103.
+(pdftex.def)             Requested size: 269.10095pt x 187.14941pt.
+ [4 <./figures//example3.png>]
+<figures//example4.png, id=37, 278.84175pt x 91.542pt>
+File: figures//example4.png Graphic file (type png)
+<use figures//example4.png>
+Package pdftex.def Info: figures//example4.png  used on input line 140.
+(pdftex.def)             Requested size: 253.49762pt x 83.22513pt.
+ [5 <./figures//example4.png>] [6] [7] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 2692 strings out of 477843
- 45971 string characters out of 2823599
- 348221 words of memory out of 3000000
- 21595 multiletter control sequences out of 15000+600000
+ 2718 strings out of 477843
+ 46585 string characters out of 2823599
+ 351237 words of memory out of 3000000
+ 21621 multiletter control sequences out of 15000+600000
  476724 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,12n,67p,314b,249s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 60i,12n,67p,350b,351s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\renda\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/renda/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (4 pages, 154080 bytes).
+Output written on main.pdf (7 pages, 219861 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 45 words of extra memory for PDF output out of 10000 (max. 10000000)
 

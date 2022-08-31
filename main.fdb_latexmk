@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1661898888 "c:/Users/renda/OneDrive/Documents/CsEandeavours/Books/Notes/STA3036S/Integer_Programming/main.tex" "main.pdf" "main" 1661898889
+["pdflatex"] 1661906566 "c:/Users/renda/OneDrive/Documents/CsEandeavours/Books/Notes/STA3036S/Integer_Programming/main.tex" "main.pdf" "main" 1661906568
   "C:/Users/renda/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1661893892 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/renda/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1661645761 14064 da2ebc362f2a2db09a4ef754ab796f4b ""
   "C:/Users/renda/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1661892670 10374550 5dab498a2418bc8ddb5b4eb62dd33fcd ""
@@ -55,11 +55,13 @@
   "C:/Users/renda/AppData/Local/Programs/MiKTeX/tex/latex/grfext/grfext.sty" 1575399474 7133 b94bbacbee6e4fdccdc7f810b2aec370 ""
   "C:/Users/renda/AppData/Local/Programs/MiKTeX/tex/latex/kvoptions/kvoptions.sty" 1656236481 22555 6d8e155cfef6d82c3d5c742fea7c992e ""
   "C:/Users/renda/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1661237706 30737 1b92a9b24781f898fb8680eb9038ebfb ""
-  "c:/Users/renda/OneDrive/Documents/CsEandeavours/Books/Notes/STA3036S/Integer_Programming/main.tex" 1661898887 2938 fa02ee0aaf4a48d2d3df680c4edb3dc0 ""
+  "c:/Users/renda/OneDrive/Documents/CsEandeavours/Books/Notes/STA3036S/Integer_Programming/main.tex" 1661906565 7348 aa90a8e8255b080e0b6bfc55ce8a7a2f ""
   "figures//example1.png" 1661894901 20608 a4a79f0050437047d8a1dd3efe4fe301 ""
   "figures//example2.png" 1661896747 52631 9dce100a8fa0b8a2747822e86b9d25e0 ""
-  "main.aux" 1661898889 324 9cdc05dd1f35f3baf7e61c8a33d3549b "pdflatex"
-  "main.tex" 1661898887 2938 fa02ee0aaf4a48d2d3df680c4edb3dc0 ""
+  "figures//example3.png" 1661899830 45559 2b101b39cf2be9450d113025abd4c279 ""
+  "figures//example4.png" 1661901957 23837 8d23396964b1ac6fa88e86177c92978e ""
+  "main.aux" 1661906567 692 f5037f07b59964185cb6c66f5f5b4b7c "pdflatex"
+  "main.tex" 1661906565 7348 aa90a8e8255b080e0b6bfc55ce8a7a2f ""
   (generated)
   "main.aux"
   "main.log"

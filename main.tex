@@ -63,12 +63,12 @@ $ and Integer\\
     \item So shifting the isocost line down from A (Restricting solution), the first int point it touches will be the optimal point.
     \item Theres an algorithm we'll use to find these solutions.
 \end{itemize}
-\subsection*{Example 2}
+\subsection*{Example 2 - Project selection problem}
 \begin{figure}[ht]
     \centering
     \includegraphics*[width=1\textwidth]{example2}
-    \caption{Example 2}
-    \label{fig: Example 2}
+    \caption{Project selection problem}
+    \label{fig: Project selection problem}
 \end{figure}
 
 \begin{equation}
@@ -78,8 +78,8 @@ $ and Integer\\
     0 & \text{Otherwise}
   \end{cases}
 \end{equation}
-Max $8000X_1+11000X_2+6000X_3+4000X4$
-St:
+Max $8000X_1+11000X_2+6000X_3+4000X4$\\
+St:\\
 $5000X_1+7000X_2+4000X_3+3000X_4 \leq 14000\\
 X_1, X_2, X_3, X_4 \in \{0,1\} 
 $
@@ -89,6 +89,102 @@ $
     \item If you round down, Z = R19000
     \item Better solution - $X_1=0, X_2=X_3=X_4=1$
     \item This is found using the algorithm we'll learn later.
+    \item We could have added constraints:
+        \begin{itemize}
+            \item Only 2 projects can be selected ($X_1+X_2+X_3+X_4 = 2$).
+            \item If project 1 is selected, then project 3 must also be selected ($X_1 \leq X_3$)
+            \item If project 2 is selected, then project 4 can't be selected ($X_2+X_4 \leq 1$) - He acknowledged the fact that this condition goes the other way around as well.
+        \end{itemize}
+\end{itemize}
+
+\subsection*{Example 3 - Set covering problem}
+\begin{figure}[ht]
+    \centering
+    \includegraphics*[width=0.69\textwidth]{example3}
+    \caption{Set covering problem}
+    \label{fig: Set covering problem}
+\end{figure}
+Find min number of hospitals that can be built. Trying to give each city access to a hospital(They have to be adjacent to simulate access).
+\begin{equation}
+   Let X_j =
+  \begin{cases}
+    1 & \text{if hospital built in $j; j$ = 1,2,3..., 11} \\
+    0 & \text{Otherwise}
+  \end{cases}
+\end{equation}
+
+Min $X_1+X_2+...+X_{11}$\\
+St:\\
+$X_1+X_2+X_3+X_4 \geq 1 (X1)\\
+X_1+X_2+X_3+X_5 \geq 1 (X2)\\
+X_1+X_2+X_3+X_5+X_6 \geq 1 (X3)\\
+X_1+X_3+X_6+X_7 \geq 1 (X4)\\
+X_2+X_3+X_6+X_8+X_9 \geq 1 (X5)\\
+X_3+X_4+X_5+X_7+X_8+X_9 \geq 1 (X6)\\
+X_4+X_6+X_8 \geq 1 (X7)\\
+X_5+X_6+X_7+X_9+X_{10} \geq 1 (X8)\\
+X_5+X_6+X_8+X_{10}+X_{11} \geq 1 (X9)\\
+X_8+X_9+X_{11} \geq 1 (X10)\\
+X_9+X_{10} \geq 1 (X11)\\
+X_1, X_2, X_3, ... X_{11} \in \{0,1\} 
+$
+\begin{itemize}
+    \item To get the constraints, we go from $X_1 to X_{11}$ - For each X, the sum of it and all adjacent (touching) X's must at least 1. 
+    \item This means we build at least one hospital to accomodate that group of cities. This will eventually cover all combinations of X's thus we'll be sure we ran through every possible hospital location (aka covered all cities).
+    \item Optimal solution - $X_3=X_8=X_9=1$
+\end{itemize}
+
+\subsection*{Example 4 - Fixed charge problem}
+\begin{figure}[ht]
+    \centering
+    \includegraphics*[width=0.65\textwidth]{example4}
+    \caption{Fixed charge problem}
+    \label{fig: Fixed charge problem}
+\end{figure}
+Let $X_j$ be the  number of product j produced.
+\begin{equation}
+   Let Y_j =
+  \begin{cases}
+    1 & \text{if product is produced; $j$ = 1,2,3} \\
+    0 & \text{Otherwise}
+  \end{cases}
+\end{equation}
+Max 48$X_1+55X_2+50X_3-1000Y_1-800Y_2-900Y_3$\\
+St:\\
+$
+2X_1+3X_2+6X_3 \leq 600\\
+6X_1+3X_2+4X_3 \leq 300\\
+5X_1+6X_2+2X_3 \leq 400\\
+X_1 \leq M_1Y_1\\
+X_2 \leq M_2Y_2\\
+X_3 \leq M_3Y_3\\
+Y_1,Y_2,Y_3 \in \{0;1\}\\
+X_1,X_2,X_3 \geq 0 $ and Integer
+
+\begin{itemize}
+    \item Manufacturing where you're making paint
+    \item \textbf{Setup cost (fixed charge)} - Cost of cleaning machine after making red paint tp prepare to make yellow for example.
+    \item \textbf{Variable cost} - e.g Hiring trucks will cost a certain, fixed, amount (fixed cost) and the cost of using them will vary (hence variable cost).
+    \item The 4th to 6th constraints are added to make sure that each cost $Y_j$ is only applied if $X_j$ is actually produced.
+        \begin{itemize}
+            \item M is a big number greater than 0.
+            \item if X is 0, Y can be 0 or 1.
+            \item BUT if X is 1, Y \textbf{HAS} to be 1 as well (Since MY has to be at least equal to X).
+            \item This is to say, surely if we produce at least one (X), there has to be some cost involved (Y).
+            \item In fact, the moment X is slightly above 0, Y is 1.
+            \item M is acting as an upper bound for X.
+            \item In this case, We can find a reasonable value for M1:
+                \begin{itemize}
+                    \item Method - For each X, in the first 3 constraints, if the other X values are 0, M will be the max value X can take:
+                        \begin{itemize}
+                            \item For X1,
+                            \item For constraint 1: X1 = 300
+                            \item For constraint 2: X1 = 50
+                            \item For constraint 3: X1 = 80
+                            \item Therefore, the max it can be will be the min of the 3 values (\textbf{We do this so that all constraints are satisfied}; Therefore, M1=50).
+                        \end{itemize}
+                \end{itemize}
+        \end{itemize}
 \end{itemize}
 
 \end{document}
