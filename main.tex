@@ -187,4 +187,26 @@ X_1,X_2,X_3 \geq 0 $ and Integer
         \end{itemize}
 \end{itemize}
 
+\subsection*{Relaxation of ILP}
+\begin{figure}[ht]
+    \centering
+    \includegraphics*[width=0.65\textwidth]{Relaxation_of_ILP}
+    \caption{Relaxation of ILP}
+    \label{fig: Relaxation of ILP}
+\end{figure}
+\begin{itemize}
+    \item When you drop the integer constraints, you relax the integer constraint, hence LP relaxation.
+    \item If the solution we find just happens to be an integer solution, we're done, else, we have to do something else.
+    \item The feasible region of the relaxed problem is a \textbf{superset} (contains) of the associated integer linear programming solution feasible region. This makes sense as restricting things can only make the feasible region smaller.
+    \item The objective func value for the integer solution can't be greater than that of the relaxed (normal simplex) version in a maximization.
+    \item The optimal solution of the relaxed solution is the upper bound of the ILP solution for a maximization.
+    \item The optimal solution of the relaxed solution is the lower bound of the ILP solution for a minimization.
+    \item At each iteration in our search for a solution, the objective function value for any feasible solution ILP is a lower bound for an maximixation (We can't accept anything lower since we already have at least that value as a potential solution).
+    \item At each iteration in our search for a solution, the objective function value for any feasible solution ILP is an upper bound for an minimization (We can't accept anything above since we already have at most that value as a potential solution).
+    \item This is the \textbf{Branch and Bound} algorithm.
+    \item It involves solving a series of LP problems.
+    \item It can solve any ILP; In fact, any optimization (It's just that some take forever).
+    \item In practice, the branch and bound can take a lot of computational effort and time.
+\end{itemize}
+
 \end{document}
