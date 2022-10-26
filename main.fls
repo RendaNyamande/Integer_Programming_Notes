@@ -1,6 +1,6 @@
-PWD c:\Users\renda\OneDrive\Documents\CsEandeavours\Books\Notes\STA3036S\Integer_Programming
+PWD c:\Users\renda\OneDrive\Documents\CsEandeavours\Notes\STA3036S\Integer_Programming
 INPUT C:\Users\renda\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\renda\OneDrive\Documents\CsEandeavours\Books\Notes\STA3036S\Integer_Programming\main.tex
+INPUT c:\Users\renda\OneDrive\Documents\CsEandeavours\Notes\STA3036S\Integer_Programming\main.tex
 OUTPUT main.log
 INPUT C:\Users\renda\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\renda\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -340,6 +340,18 @@ INPUT .\figures\\Branch_and_Bound_workedexample_part2.png
 INPUT .\figures\\Branch_and_Bound_workedexample_part2.png
 INPUT .\figures\\Branch_and_Bound_workedexample_part2.png
 INPUT .\figures\\Branch_and_Bound_workedexample_part2.png
+INPUT .\figures\\Problem_1_excel.png
+INPUT figures\\Problem_1_excel.png
+INPUT .\figures\\Problem_1_excel.png
+INPUT .\figures\\Problem_1_excel.png
+INPUT .\figures\\Problem_1_excel.png
+INPUT .\figures\\Problem_1_excel.png
+INPUT .\figures\\Problem_2_excel.png
+INPUT figures\\Problem_2_excel.png
+INPUT .\figures\\Problem_2_excel.png
+INPUT .\figures\\Problem_2_excel.png
+INPUT .\figures\\Problem_2_excel.png
+INPUT .\figures\\Problem_2_excel.png
 INPUT main.aux
 INPUT C:\Users\renda\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\renda\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk

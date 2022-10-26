@@ -115,18 +115,18 @@ Find min number of hospitals that can be built. Trying to give each city access 
 
 Min $X_1+X_2+...+X_{11}$\\
 St:\\
-$X_1+X_2+X_3+X_4 \geq 1 (X1)\\
-X_1+X_2+X_3+X_5 \geq 1 (X2)\\
-X_1+X_2+X_3+X_5+X_6 \geq 1 (X3)\\
-X_1+X_3+X_6+X_7 \geq 1 (X4)\\
-X_2+X_3+X_6+X_8+X_9 \geq 1 (X5)\\
-X_3+X_4+X_5+X_7+X_8+X_9 \geq 1 (X6)\\
-X_4+X_6+X_8 \geq 1 (X7)\\
-X_5+X_6+X_7+X_9+X_{10} \geq 1 (X8)\\
-X_5+X_6+X_8+X_{10}+X_{11} \geq 1 (X9)\\
-X_8+X_9+X_{11} \geq 1 (X10)\\
-X_9+X_{10} \geq 1 (X11)\\
-X_1, X_2, X_3, ... X_{11} \in \{0,1\} 
+$X_1+X_2+X_3+X_4 \geq 1$  ...(X1)\\
+$X_1+X_2+X_3+X_5 \geq 1$  ...(X2)\\
+$X_1+X_2+X_3+X_5+X_6 \geq 1$  ...(X3)\\
+$X_1+X_3+X_6+X_7 \geq 1$  ...(X4)\\
+$X_2+X_3+X_6+X_8+X_9 \geq 1$  ...(X5)\\
+$X_3+X_4+X_5+X_7+X_8+X_9 \geq 1$  ...(X6)\\
+$X_4+X_6+X_8 \geq 1$  ...(X7)\\
+$X_5+X_6+X_7+X_9+X_{10} \geq 1$  ...(X8)\\
+$X_5+X_6+X_8+X_{10}+X_{11} \geq 1$  ...(X9)\\
+$X_8+X_9+X_{11} \geq 1$  ...(X10)\\
+$X_9+X_{10} \geq 1$  ...(X11)\\
+$X_1, X_2, X_3, ... X_{11} \in \{0,1\} 
 $
 \begin{itemize}
     \item To get the constraints, we go from $X_1 to X_{11}$ - For each X, the sum of it and all adjacent (touching) X's must at least 1. 
@@ -237,5 +237,28 @@ X_1,X_2,X_3 \geq 0 $ and Integer
     \item If both decision variables are not integers, branch arbitrarilly on any one of them. You will get to the same solution eventually.
 \end{itemize}
 \pagebreak
+
+\subsection*{Problem 1 excel}
+\begin{figure}[ht]
+    \centering
+    \includegraphics*[width=1.2\textwidth]{Problem_1_excel.png}
+    \caption{Problem 1 excel}
+    \label{fig: Problem 1 excel}
+\end{figure}
+\begin{itemize}
+    \item For the constraints, keep the variables on the left hand side of the equation.
+    \item This leads to us having to separate constraints 3, 4 and 5 into 2 constraints each.
+\end{itemize}
+
+\subsection*{Problem 2 excel}
+\begin{figure}[ht]
+    \centering
+    \includegraphics*[width=1.2\textwidth]{Problem_2_excel.png}
+    \caption{Problem 2 excel}
+    \label{fig: Problem 2 excel}
+\end{figure}
+\begin{itemize}
+    \item Same
+\end{itemize}
 
 \end{document}
